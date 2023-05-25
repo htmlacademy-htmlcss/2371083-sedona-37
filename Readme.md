@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Таня Морозова](https://up.htmlacademy.ru/htmlcss/37/user/2371083).
-* Наставник: `Неизвестно`.
+- Студент: [Таня Морозова](https://up.htmlacademy.ru/htmlcss/37/user/2371083).
+- Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
 
 ---
 
