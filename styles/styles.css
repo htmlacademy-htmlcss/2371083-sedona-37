@@ -162,20 +162,19 @@ width: 1200px;
     min-height: 415px;
     background: url("../images/Subscribe.jpg") no-repeat;
     color: #ffffff;
+    text-align: center;
   }
 
   .subscription-title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
   }
   .subscription-desc {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
-    text-align: center;
   }
 
   .subscription-button {
@@ -202,4 +201,68 @@ width: 1200px;
   text-align: center;
   text-decoration: none;
   color: #000000;
+}
+
+/* Catalog*/
+.filter {
+  min-height: 412px;
+  background: url("../images/hero-filtr.jpg") no-repeat;
+  color: #ffffff;
+}
+
+.filter-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.search-options-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.search-options-item {
+  line-height: 23px;
+}
+
+.button-light {
+  background-color: #82B3D3;
+}
+
+.catalog {
+  min-height: 1235px;
+}
+.catalog-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+.card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #F2F2F2;
+  width: auto;
+}
+.pagination-list {
+  font-size: 12px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
 }
