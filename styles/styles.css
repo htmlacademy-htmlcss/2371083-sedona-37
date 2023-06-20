@@ -121,6 +121,12 @@ body {
   margin: 0 auto;
 }
 
+.advantages-header {
+  min-height: 261px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
 .advantages-title {
   font-size: 30px;
   line-height: 36px;
@@ -130,12 +136,17 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+  max-width: 651px;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .advantages-desc {
   text-align: center;
   margin: 0;
   padding: 0;
+  max-width: 651px;
+  margin: 0 auto;
 }
 
 .advantages-item-title {
@@ -205,6 +216,12 @@ body {
   color: #ffffff;
 }
 
+.services-header {
+  min-height: 246px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .services-title {
   font-size: 30px;
   line-height: 36px;
@@ -214,12 +231,17 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .services-desc {
   text-align: center;
   margin: 0;
   padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .services-list {
@@ -262,6 +284,9 @@ body {
 
 .search {
   text-align: center;
+  min-height: 406px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .search-title {
@@ -271,11 +296,20 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .search-desc {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  max-width: 592px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
+
 .search a.button {
   font-size: 20px;
   line-height: 36px;
@@ -286,6 +320,8 @@ body {
 .subscription {
   min-height: 415px;
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscription-index {
@@ -301,6 +337,18 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.subscription-desc {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .subscription-button {
