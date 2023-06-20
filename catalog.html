@@ -61,112 +61,121 @@
               <a class="breadcrumbs-link" href="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
-          <h2 class="visually-hidden">Параметры поиска</h2>
-          <form
-            class="search-options"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <fieldset class="search-options-group">
-              <legend class="search-options-title">Инфраструктура:</legend>
-              <ul class="search-options-list">
-                <li class="search-options-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="checkbox"
-                      name="pool"
-                      checked
-                    />
-                    Бассейн
-                  </label>
-                </li>
-                <li class="search-options-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="checkbox"
-                      name="parking"
-                      checked
-                    />
-                    Парковка
-                  </label>
-                </li>
-                <li class="search-options-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi" />
-                    Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="search-options-group">
-              <legend class="search-options-title">Тип жилья:</legend>
-              <ul class="search-options-list">
-                <li class="search-options-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="type"
-                      value="hotel"
-                      checked
-                    />
-                    Гостиница
-                  </label>
-                </li>
-                <li class="search-options-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="type"
-                      value="motel"
-                    />
-                    Мотель
-                  </label>
-                </li>
-                <li class="search-options-item">
-                  <label class="control">
-                    <input
-                      class="control-input"
-                      type="radio"
-                      name="type"
-                      value="apartments"
-                    />
-                    Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="search-options-group">
-              <legend class="search-options-title">Стоимость, ₽:</legend>
-              <label class="control-cost" for="min-cost">от</label>
-              <input
-                class="control-input-cost"
-                type="number"
-                id="min-cost"
-                name="min-cost"
-                value="0"
-              />
-              <label class="control-cost" for="max-cost">до</label>
-              <input
-                class="control-input-cost"
-                type="number"
-                id="max-cost"
-                name="max-cost"
-                value="9000"
-              />
-              <label class="visually-hidden">
-                Выбор цены
-                <input type="range" />
-              </label>
-            </fieldset>
-            <button class="button button-light" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
-          </form>
+            <h2 class="visually-hidden">Параметры поиска</h2>
+            <form
+              class="search-options"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+            <div class="search-options-container">
+              <fieldset class="search-options-group">
+                <legend class="search-options-title">Инфраструктура:</legend>
+                <ul class="search-options-list">
+                  <li class="search-options-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="pool"
+                        checked
+                      />
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="search-options-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="parking"
+                        checked
+                      />
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="search-options-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="checkbox"
+                        name="wi-fi"
+                      />
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="search-options-group">
+                <legend class="search-options-title">Тип жилья:</legend>
+                <ul class="search-options-list">
+                  <li class="search-options-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="radio"
+                        name="type"
+                        value="hotel"
+                        checked
+                      />
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="search-options-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="radio"
+                        name="type"
+                        value="motel"
+                      />
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="search-options-item">
+                    <label class="control">
+                      <input
+                        class="control-input"
+                        type="radio"
+                        name="type"
+                        value="apartments"
+                      />
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="search-options-group">
+                <legend class="search-options-title">Стоимость, ₽:</legend>
+                <label class="control-cost" for="min-cost">от</label>
+                <input
+                  class="control-input-cost"
+                  type="number"
+                  id="min-cost"
+                  name="min-cost"
+                  value="0"
+                />
+                <label class="control-cost" for="max-cost">до</label>
+                <input
+                  class="control-input-cost"
+                  type="number"
+                  id="max-cost"
+                  name="max-cost"
+                  value="9000"
+                />
+                <label class="visually-hidden">
+                  Выбор цены
+                  <input type="range" />
+                </label>
+              </fieldset>
+              <button class="button button-light" type="submit">
+                Применить
+              </button>
+              <button class="button" type="reset">Сбросить</button>
+            </form>
+          </div>
         </section>
         <section class="catalog">
+          <div class="catalog-header">
           <h2 class="catalog-title">Найдено гостиниц:<output>38</output></h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
@@ -184,6 +193,7 @@
               <span aria-label="Отображать списком"></span>
             </a>
           </div>
+        </div>
           <div class="catalog-cards">
             <ul class="catalog-cards-list">
               <li class="catalog-cards-item">
@@ -328,37 +338,48 @@
           </form>
         </section>
       </main>
-      <footer>
+      <footer class="page-footer">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a href="https://vk.com/htmlacademy" target="_blank">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a href="https://t.me/htmlacademy " target="_blank">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a
-              href="https://www.youtube.com/user/htmlacademyru"
-              target="_blank"
-            >
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank">
-          <img
-            src="images/logo-footer.png"
-            width="114.9"
-            height="32.9"
-            alt="логотип HTML Академии"
-          />
-        </a>
+        <div class="page-footer-container">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://vk.com/htmlacademy"
+                target="_blank"
+              >
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://t.me/htmlacademy "
+                target="_blank"
+              >
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://www.youtube.com/user/htmlacademyru"
+                target="_blank"
+              >
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank">
+            <img
+              src="images/logo-footer.png"
+              width="115"
+              height="33"
+              alt="логотип HTML Академии"
+            />
+          </a>
+        </div>
       </footer>
     </div>
   </body>

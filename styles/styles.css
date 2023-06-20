@@ -13,7 +13,19 @@
   font-style: normal;
   font-display: swap;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   font-family: "PT-sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -21,16 +33,51 @@ body {
   color: #333333;
   background-color: #f2f2f2;
   margin: 0;
+  padding: 0;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
+}
+
+.main-index {
+  flex-grow: 1;
 }
 
 /* Pages */
+
+.navigation {
+  display: flex;
+  padding: 0 70px;
+}
+
+.header-logo {
+  margin-right: 28px;
+}
+
+.navigation-list {
+  display: flex;
+  max-width: 600px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-list li {
+  padding: 20px 16px;
+}
+
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
+  justify-content: flex-end;
+}
 
 .navigation-link {
   font-size: 20px;
@@ -38,6 +85,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  text-align: center;
 }
 
 .button {
@@ -73,6 +121,12 @@ body {
   margin: 0 auto;
 }
 
+.advantages-header {
+  min-height: 261px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
 .advantages-title {
   font-size: 30px;
   line-height: 36px;
@@ -80,10 +134,19 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  max-width: 651px;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .advantages-desc {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  max-width: 651px;
+  margin: 0 auto;
 }
 
 .advantages-item-title {
@@ -93,17 +156,51 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-item-desc {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 62px;
 }
 
 .advantages-list {
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-content {
+  padding: 50px 85px;
+  width: 400px;
+  min-height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantages-content-dark {
+  padding-top: 102px;
+  padding-bottom: 102px;
+}
+
+.advantages-item-dark {
+  display: flex;
+}
+
+.advantages-image {
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-item:nth-of-type(odd) {
@@ -119,6 +216,12 @@ body {
   color: #ffffff;
 }
 
+.services-header {
+  min-height: 246px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .services-title {
   font-size: 30px;
   line-height: 36px;
@@ -126,27 +229,53 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .services-desc {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .services-list {
   text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
+
+.services-item {
+  width: 400px;
+  min-height: 385px;
+  padding: 50px 85px;
+}
+
 .services-item-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .services-item-desc {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .services-list li:nth-of-type(odd) {
@@ -155,6 +284,9 @@ body {
 
 .search {
   text-align: center;
+  min-height: 406px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .search-title {
@@ -164,11 +296,20 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .search-desc {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  max-width: 592px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
+
 .search a.button {
   font-size: 20px;
   line-height: 36px;
@@ -179,6 +320,8 @@ body {
 .subscription {
   min-height: 415px;
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscription-index {
@@ -194,6 +337,18 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.subscription-desc {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .subscription-button {
@@ -206,8 +361,18 @@ body {
   border: none;
 }
 
+.footer-social-list {
+  display: flex;
+}
+
 .footer-social-link {
   text-decoration: none;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 70px 35px;
 }
 
 .footer-phone {
@@ -225,12 +390,21 @@ body {
   background: url("../images/hero-filtr.jpg") no-repeat;
   background-color: #8daab8;
   color: #ffffff;
+  margin: 0;
+  padding: 70px;
+  padding-top: 35px;
 }
 
 .filter-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs {
+  display: flex;
 }
 
 .breadcrumbs-link {
@@ -239,6 +413,10 @@ body {
   font-weight: 400;
   text-decoration: none;
   color: #ffffff;
+}
+
+.search-options-container {
+  display: flex;
 }
 
 .search-options-title {
@@ -251,12 +429,39 @@ body {
   line-height: 23px;
 }
 
+.catalog {
+  padding: 50px 70px 60px;
+}
+
+.catalog-header {
+  display: flex;
+}
+
+.catalog-cards-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.card {
+  width: 340px;
+  height: 438px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
 .catalog-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  padding: 0;
+  margin: 0;
 }
 
 .card-title {
@@ -264,16 +469,22 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+  padding: 0;
+  margin: 0;
 }
 
 .card-text {
   font-size: 18px;
   line-height: 21px;
+  padding: 0;
+  margin: 0;
 }
 
 .card-cost {
   font-size: 18px;
   line-height: 21px;
+  padding: 0;
+  margin: 0;
 }
 
 .card-rating {
@@ -282,6 +493,13 @@ body {
   font-weight: 400;
   background-color: #f2f2f2;
   width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
 }
 
 .pagination-list {
@@ -289,6 +507,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
+  display: flex;
 }
 
 .pagination-link {
