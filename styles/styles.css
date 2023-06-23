@@ -36,6 +36,17 @@ body {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -63,20 +74,18 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   max-width: 600px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.navigation-list li {
-  padding: 20px 16px;
-}
-
 .navigation-user {
   width: 268px;
   margin-left: auto;
   justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .navigation-link {
@@ -86,6 +95,13 @@ body {
   color: #000000;
   text-decoration: none;
   text-align: center;
+  padding: 20px 16px;
+  display: block;
+}
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 22px;
 }
 
 .button {
@@ -119,6 +135,7 @@ body {
 .hero-img {
   display: block;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .advantages-header {
@@ -363,10 +380,17 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 190px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 10px;
 }
 
-.footer-social-link {
-  text-decoration: none;
+.footer-social-item {
+  width: 46px;
+  height: 40px;
 }
 
 .page-footer-container {
