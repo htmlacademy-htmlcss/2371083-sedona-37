@@ -61,11 +61,12 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-index" href="index.html">
+                <svg class="breadcrumbs-link-svg" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13"><path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/>
+                <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
                 <span class="visually-hidden">Главная</span></a>
             </li>
-            <li class="breadcrumbs-item breadcrumbs-item-arrow"></li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link" href="#">Гостиницы</a>
             </li>
           </ul>
             <h2 class="visually-hidden">Параметры поиска</h2>
@@ -327,18 +328,16 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form
-            class="subscription-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label class="visually-hidden">
-              E-mail
-              <input type="email" name="e-mail" placeholder="Ваш e-mail" />
-            </label>
-            <button class="subscription-button" type="submit">
-              Подписаться
-            </button>
-          </form>
+          class="subscription-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <label class="visually-hidden" for="e-mail">E-mail</label>
+            <input class="subscription-email" type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" />
+          <button class="subscription-button" type="submit">
+            Подписаться
+          </button>
+        </form>
         </section>
       </main>
       <footer class="page-footer">
