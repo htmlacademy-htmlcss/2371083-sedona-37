@@ -76,39 +76,43 @@
               method="post"
             >
             <div class="search-options-container">
+              <div class="search-options-group-first">
               <fieldset class="search-options-group">
                 <legend class="search-options-title">Инфраструктура:</legend>
                 <ul class="search-options-list">
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="pool"
                         checked
                       />
-                      Бассейн
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="parking"
                         checked
                       />
-                      Парковка
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="wi-fi"
                       />
-                      Wi-Fi
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -119,52 +123,58 @@
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="type"
                         value="hotel"
                         checked
                       />
-                      Гостиница
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="type"
                         value="motel"
                       />
-                      Мотель
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="type"
                         value="apartments"
                       />
-                      Апартаменты
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
+            </div>
+            <div class="search-options-group-second">
               <fieldset class="search-options-group">
                 <legend class="search-options-title">Стоимость, ₽:</legend>
-                <label class="control-cost" for="min-cost">от</label>
-                <input
-                  class="control-input-cost"
+                <div class="range-wrapper-inputs">
+                  <label class="control-cost" for="min-cost">от</label>
+                  <input
+                  class="control-input-cost control-input-cost-min"
                   type="number"
                   id="min-cost"
                   name="min-cost"
                   value="0"
                 />
-                <label class="control-cost" for="max-cost">до</label>
+                  <label class="control-cost" for="max-cost">до</label>
                 <input
-                  class="control-input-cost"
+                  class="control-input-cost control-input-cost-max"
                   type="number"
                   id="max-cost"
                   name="max-cost"
@@ -172,13 +182,27 @@
                 />
                 <label class="visually-hidden">
                   Выбор цены
-                  <input type="range" />
+                  <input type="range"/>
                 </label>
+                </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 206px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
               </fieldset>
-              <button class="button button-light" type="submit">
+              <div class="search-options-group-button">
+                <button class="button button-light" type="submit">
                 Применить
-              </button>
-              <button class="button" type="reset">Сбросить</button>
+                </button>
+                <button class="button button-reset" type="reset">Сбросить</button>
+              </div>
+              </div>
             </form>
           </div>
         </section>
