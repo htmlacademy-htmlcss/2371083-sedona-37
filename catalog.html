@@ -61,11 +61,12 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-index" href="index.html">
+                <svg class="breadcrumbs-link-svg" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13"><path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/>
+                <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
                 <span class="visually-hidden">Главная</span></a>
             </li>
-            <li class="breadcrumbs-item breadcrumbs-item-arrow"></li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link" href="#">Гостиницы</a>
             </li>
           </ul>
             <h2 class="visually-hidden">Параметры поиска</h2>
@@ -75,39 +76,43 @@
               method="post"
             >
             <div class="search-options-container">
+              <div class="search-options-group-first">
               <fieldset class="search-options-group">
                 <legend class="search-options-title">Инфраструктура:</legend>
                 <ul class="search-options-list">
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="pool"
                         checked
                       />
-                      Бассейн
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="parking"
                         checked
                       />
-                      Парковка
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="wi-fi"
                       />
-                      Wi-Fi
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -118,52 +123,58 @@
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="type"
                         value="hotel"
                         checked
                       />
-                      Гостиница
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="type"
                         value="motel"
                       />
-                      Мотель
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="search-options-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="type"
                         value="apartments"
                       />
-                      Апартаменты
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
+            </div>
+            <div class="search-options-group-second">
               <fieldset class="search-options-group">
                 <legend class="search-options-title">Стоимость, ₽:</legend>
-                <label class="control-cost" for="min-cost">от</label>
-                <input
-                  class="control-input-cost"
+                <div class="range-wrapper-inputs">
+                  <label class="control-cost" for="min-cost">от</label>
+                  <input
+                  class="control-input-cost control-input-cost-min"
                   type="number"
                   id="min-cost"
                   name="min-cost"
                   value="0"
                 />
-                <label class="control-cost" for="max-cost">до</label>
+                  <label class="control-cost" for="max-cost">до</label>
                 <input
-                  class="control-input-cost"
+                  class="control-input-cost control-input-cost-max"
                   type="number"
                   id="max-cost"
                   name="max-cost"
@@ -171,13 +182,27 @@
                 />
                 <label class="visually-hidden">
                   Выбор цены
-                  <input type="range" />
+                  <input type="range"/>
                 </label>
+                </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 206px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
               </fieldset>
-              <button class="button button-light" type="submit">
+              <div class="search-options-group-button">
+                <button class="button button-light" type="submit">
                 Применить
-              </button>
-              <button class="button" type="reset">Сбросить</button>
+                </button>
+                <button class="button button-reset" type="reset">Сбросить</button>
+              </div>
+              </div>
             </form>
           </div>
         </section>
@@ -327,18 +352,16 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form
-            class="subscription-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label class="visually-hidden">
-              E-mail
-              <input type="email" name="e-mail" placeholder="Ваш e-mail" />
-            </label>
-            <button class="subscription-button" type="submit">
-              Подписаться
-            </button>
-          </form>
+          class="subscription-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <label class="visually-hidden" for="e-mail">E-mail</label>
+            <input class="subscription-email" type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" />
+          <button class="subscription-button" type="submit">
+            Подписаться
+          </button>
+        </form>
         </section>
       </main>
       <footer class="page-footer">
