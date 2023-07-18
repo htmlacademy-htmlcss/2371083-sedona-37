@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="page-header">
+      <header data-test="header" class="page-header">
         <nav class="navigation">
           <a href="#" aria-current="page">
             <img
@@ -74,8 +74,8 @@
         </nav>
       </header>
 
-      <main class="main-index">
-        <div class="hero-index">
+      <main data-test="main" class="main-index">
+        <div data-test="hero" class="hero-index">
           <h1 class="visually-hidden">Добро пожаловать в городок Седона!</h1>
           <img
             class="hero-img"
@@ -85,7 +85,7 @@
         великолепный город Седона. Потому что Большой каньон - это отстой"
           />
         </div>
-        <section class="advantages">
+        <section data-test="advantages" class="advantages">
           <div class="advantages-header">
             <h2 class="advantages-title">
               Седона — небольшой городок в Аризоне,<br />
@@ -161,7 +161,7 @@
             </li>
           </ul>
         </section>
-        <section class="services">
+        <section data-test="service" class="services">
           <div class="services-header">
             <h2 class="services-title">
               Приезжайте в Седону отдохнуть в комфорте и уюте!
@@ -195,7 +195,7 @@
             </li>
           </ul>
         </section>
-        <section class="search">
+        <section data-test="search" class="search">
           <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-desc">
             Укажите предполагаемые даты поездки,<br />
@@ -223,7 +223,7 @@
               id="e-mail"
               placeholder="Ваш e-mail"
             />
-            <button class="subscription-button" type="submit">
+            <button class="subscription-button" type="button">
               Подписаться
             </button>
           </form>
@@ -328,7 +328,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -347,7 +347,7 @@
                 name="auth-login"
                 placeholder="27 апреля 2020"
               />
-              <button class="auth-form-calendar">
+              <button class="auth-form-calendar" type="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -380,7 +380,7 @@
                 name="auth-password"
                 placeholder="1 сентября 2023"
               />
-              <button class="auth-form-calendar">
+              <button class="auth-form-calendar" type="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -511,7 +511,7 @@
                 </div>
               </div>
             </div>
-            <button class="button button-light auth-form-button" type="submit">
+            <button class="button button-light auth-form-button" type="button">
               Найти
             </button>
           </form>
