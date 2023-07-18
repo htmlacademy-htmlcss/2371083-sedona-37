@@ -113,7 +113,7 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <div class="search-options-container">
+            <div data-test="filter" class="search-options-container">
               <div class="search-options-group-first">
                 <fieldset class="search-options-group">
                   <legend class="search-options-title">Инфраструктура:</legend>
@@ -225,12 +225,12 @@
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 206px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden"
                           >Изменить минимальную цену.</span
                         >
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden"
                           >Изменить максимальную цену.</span
                         >
@@ -239,7 +239,7 @@
                   </div>
                 </fieldset>
                 <div class="search-options-group-button">
-                  <button class="button button-light" type="submit">
+                  <button class="button button-light" type="button">
                     Применить
                   </button>
                   <button class="button button-reset" type="reset">
@@ -250,7 +250,7 @@
             </div>
           </form>
         </section>
-        <section class="catalog">
+        <section data-test="catalog" class="catalog">
           <div class="catalog-header">
             <h2 class="catalog-title">Найдено гостиниц:<output> 38</output></h2>
             <select class="select-control" aria-label="Сортировка">
@@ -392,7 +392,10 @@
             </div>
           </div>
         </section>
-        <section class="subscription subscription-catalog">
+        <section
+          data-test="subscribe"
+          class="subscription subscription-catalog"
+        >
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-desc">
             Только полезная информация и никакого спама, честное бойскаутское!
@@ -410,13 +413,13 @@
               id="e-mail"
               placeholder="Ваш e-mail"
             />
-            <button class="subscription-button" type="submit">
+            <button class="subscription-button" type="button">
               Подписаться
             </button>
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer data-test="footer" class="page-footer">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="page-footer-container">
           <ul class="footer-social-list">
