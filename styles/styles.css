@@ -124,7 +124,7 @@ body {
 
 .navigation-item-current::after {
   margin: 0 auto;
-  width: 60px;
+  width: 70%;
   height: 2px;
   background-color: #756257;
   content: "";
@@ -133,7 +133,7 @@ body {
 
 .navigation-pages .navigation-item:hover::after {
   margin: 0 auto;
-  width: 60px;
+  width: 70%;
   height: 2px;
   background-color: #756257;
   content: "";
@@ -213,6 +213,7 @@ body {
 .button:focus {
   background-color: rgba(97, 80, 72, 1);
 }
+
 .button:active {
   background-color: rgba(117, 97, 87, 1);
   color: rgba(255, 255, 255, 0.3);
@@ -221,6 +222,7 @@ body {
 .button:disabled {
   background-color: #e5e5e5;
 }
+
 .button-light:hover {
   background-color: rgba(104, 162, 202, 1);
 }
@@ -326,10 +328,14 @@ body {
   padding: 14px 20px;
   border-radius: 4px 0 0 4px;
   background-color: rgba(242, 242, 242, 1);
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .hero-index {
   min-height: 485px;
+  background-color: #83b3d3;
   background: url("../images/welcom-decor.svg") bottom no-repeat,
     url("../images/index-background.jpg") no-repeat;
   background-size: 100% auto, cover;
@@ -576,10 +582,10 @@ body {
 }
 
 .subscription-index {
-  background-image: url("../images/Subscribe.jpg");
+  background-color: #8daab8;
+  background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #8daab8;
   color: #ffffff;
 }
 
@@ -696,8 +702,9 @@ body {
 /* Catalog*/
 .filter {
   min-height: 412px;
-  background: url("../images/hero-filtr.jpg") no-repeat;
   background-color: #8daab8;
+  background: url("../images/hero-filtr.jpg") no-repeat;
+  background-size: cover;
   color: #ffffff;
   margin: 0;
   padding: 70px;
@@ -925,7 +932,11 @@ body {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
+.control-input[type="checkbox"]:focus + .control-mark {
+  outline: 3px solid #8b8b8b;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
   outline: 3px solid #8b8b8b;
 }
 
@@ -1100,6 +1111,7 @@ body {
 .card a.button {
   padding: 8px;
 }
+
 .card button {
   padding: 8px;
   text-decoration: none;
@@ -1118,6 +1130,7 @@ body {
   grid-column: 1/-1;
   text-decoration: none;
 }
+
 .card-image {
   display: block;
   width: 300px;
@@ -1160,15 +1173,19 @@ body {
 .star-1 {
   width: 18px;
 }
+
 .star-2 {
   width: 42px;
 }
+
 .star-3 {
   width: 66px;
 }
+
 .star-4 {
   width: 90px;
 }
+
 .star-5 {
   width: 114px;
 }
@@ -1392,6 +1409,7 @@ body {
   line-height: 24px;
   color: #000;
 }
+
 .arrival-date-wrapper .control-input-modal {
   width: 440px;
   padding: 12px 20px;
@@ -1424,10 +1442,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .amount-people-minus {
   position: relative;
   border-radius: 4px 0 0 4px;
 }
+
 .amount-people-plus {
   position: relative;
   border-radius: 0 4px 4px 0;
@@ -1447,6 +1467,7 @@ body {
   fill: #000000;
   fill-opacity: 1;
 }
+
 .amount-people:active .icon-amount-people {
   fill-opacity: 0.2;
 }
@@ -1471,6 +1492,7 @@ body {
 .tooltip {
   position: relative;
 }
+
 .tooltip-toggle {
   display: block;
   background-color: #83b3d3;
@@ -1482,6 +1504,7 @@ body {
   background-position: center;
   border: none;
 }
+
 .tooltip-text {
   width: 256px;
   position: absolute;
