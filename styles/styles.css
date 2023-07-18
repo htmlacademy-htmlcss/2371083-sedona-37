@@ -202,6 +202,10 @@ body {
   cursor: pointer;
 }
 
+.button-want {
+  padding: 8px 34px;
+}
+
 .button:hover {
   background-color: rgba(97, 80, 72, 1);
 }
@@ -340,7 +344,7 @@ body {
 .advantages-header {
   min-height: 261px;
   padding-top: 69px;
-  padding-bottom: 69px;
+  padding-bottom: 90px;
 }
 
 .advantages-title {
@@ -706,7 +710,7 @@ body {
   font-weight: 700;
   padding: 0;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 /*форма поиска*/
 
@@ -722,6 +726,12 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 32px;
+  text-transform: capitalize;
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .search-options-item {
@@ -770,7 +780,7 @@ body {
 
 .range-scale {
   position: relative;
-  width: 287px;
+  width: 280px;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
   left: 10px;
@@ -978,7 +988,7 @@ body {
 .catalog-header {
   display: flex;
   margin-bottom: 40px;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .catalog-title {
@@ -989,14 +999,19 @@ body {
   color: #000000;
   padding: 0;
   margin: 0;
+  margin-right: auto;
 }
 
 .select-control {
+  height: 49px;
   padding: 14px 20px;
   width: 292px;
   border: none;
   border-radius: 4px;
   appearance: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
   border: 2px solid var(--forms-elements-1, #e5e5e5);
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
@@ -1015,6 +1030,9 @@ body {
 
 .catalog-view {
   width: 160px;
+  margin-left: 70px;
+  display: flex;
+  gap: 8px;
 }
 
 .catalog-view-card {
@@ -1287,6 +1305,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .auth-form-field {
@@ -1502,7 +1521,7 @@ body {
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
-
+/*
 .modal-container-close {
   display: none;
-}
+}*/
